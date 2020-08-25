@@ -1,0 +1,10 @@
+mysql> select distinct location from visit order by location asc;
++----------------+
+| location       |
++----------------+
+| Albert Hall    |
+| Writing center |
++----------------+
+2 rows in set (0.01 sec)
+
+mysql> notee

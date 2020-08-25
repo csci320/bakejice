@@ -1,0 +1,14 @@
+mysql> select distinct sports from visit order by sports asc;
++--------------------------+
+| sports                   |
++--------------------------+
+| NULL                     |
+| Baseball                 |
+| Men's golf               |
+| Men's soccer, Baseball   |
+| Women's soccer, Softball |
++--------------------------+
+5 rows in set (0.01 sec)
+
+mysql> -- The issue with this data is that 'NULL' appears in the set even though it is not an actual data point for sports. There is also an issue with multiple sports in one row, whereas baseball is already listed and Softball should be in its own row.
+mysql> notee

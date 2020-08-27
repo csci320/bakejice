@@ -1,0 +1,35 @@
+mysql> notee
+mysql> update visit set academic_rank = 'Senior' where academic_rank = 'Junior';
+Query OK, 3 rows affected (0.08 sec)
+Rows matched: 3  Changed: 3  Warnings: 0
+
+mysql> update visit set academic_rank = 'Junior' where academic_rank = 'Sophomore';
+Query OK, 4 rows affected (0.06 sec)
+Rows matched: 4  Changed: 4  Warnings: 0
+
+mysql> update visit set academic_rank = 'Sophomore' where academic_rank = 'Freshman';
+Query OK, 5 rows affected (0.05 sec)
+Rows matched: 5  Changed: 5  Warnings: 0
+
+mysql> select first_name, last_name, academic_rank from visit;
++------------+-----------+---------------+
+| first_name | last_name | academic_rank |
++------------+-----------+---------------+
+| Gary       | Gatehouse | Junior        |
+| Charlie    | Cadillac  | Senior        |
+| Irving     | Icehouse  | Junior        |
+| Alice      | Albert    | Senior        |
+| Debbie     | Davis     | Sophomore     |
+| Bob        | Booth     | Junior        |
+| Eric       | Elkins    | Senior        |
+| Hannah     | Hermanson | Senior        |
+| Frank      | Forest    | Sophomore     |
+| Frank      | Forest    | Sophomore     |
+| Charlie    | Cadillac  | Senior        |
+| Debbie     | Davis     | Sophomore     |
+| Gary       | Gatehouse | Junior        |
+| Debra      | Davis     | Sophomore     |
++------------+-----------+---------------+
+14 rows in set (0.01 sec)
+
+mysql> notee

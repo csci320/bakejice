@@ -1,0 +1,29 @@
+mysql> delete from visit where last_name = 'Booth' and purpose = 'practice SQL statements'
+    -> ;
+Query OK, 1 row affected (0.03 sec)
+
+mysql> select last_name, purpose from visit
+    -> ;
++-----------+--------------------------+
+| last_name | purpose                  |
++-----------+--------------------------+
+| Gatehouse | study hall               |
+| Cadillac  | baseball meeting         |
+| Icehouse  | Meet SLP instructor      |
+| Albert    | Study hall               |
+| Davis     | Tour of learning center  |
+| Booth     | study hall               |
+| Elkins    | Team Meeting             |
+| Hermanson | study hall               |
+| Forest    | math help                |
+| Forest    | math help                |
+| Cadillac  | get form signature       |
+| Davis     | Help with paper          |
+| Gatehouse | study hall               |
+| Davis     | MATH 101                 |
+| Bice      | working on english paper |
+| Singleton | tutoring                 |
++-----------+--------------------------+
+16 rows in set (0.00 sec)
+
+mysql> notee

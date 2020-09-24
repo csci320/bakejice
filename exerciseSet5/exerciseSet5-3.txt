@@ -1,0 +1,5 @@
+mysql> upadte sport values (NULL) where name = ('Cross Country');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'upadte sport values (NULL) where name = ('Cross Country')' at line 1
+mysql> update sport set season = (NULL) where name = ('Soccer');
+ERROR 1048 (23000): Column 'season' cannot be null
+mysql> notee

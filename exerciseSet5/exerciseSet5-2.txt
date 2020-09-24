@@ -1,0 +1,3 @@
+mysql> INSERT INTO major (name) values ('Computer Science');
+ERROR 1062 (23000): Duplicate entry 'Computer Science' for key 'major.PRIMARY'
+mysql> notee

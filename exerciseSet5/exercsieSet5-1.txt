@@ -1,0 +1,4 @@
+mysql> INSERT INTO sport (name, gender, season) values
+    -> ('Track and Field', 'Women', 'Spring');
+ERROR 1062 (23000): Duplicate entry 'Track and Field-Women' for key 'sport.PRIMARY'
+mysql> notee

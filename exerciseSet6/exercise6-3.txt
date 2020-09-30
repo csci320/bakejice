@@ -1,0 +1,1 @@
+There are no functional dependencies in 'major' as the table only holds one value.

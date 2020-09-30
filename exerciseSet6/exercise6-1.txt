@@ -1,0 +1,2 @@
+There is a functional dependency between 'first_name', 'last_name' and 'email' as first and last name determine the email.
+There is also a dependency between 'check_in_time' and 'email' as the time email is submitted determines the check in time.

@@ -1,0 +1,2 @@
+sport and major satisfy 2NF because they have and only require one key.
+student_sport and student major do not satisfy 2NF because the require more than one key and rely one information from other tables.

@@ -1,0 +1,29 @@
+mysql> insert into student (first_name, last_name, email, academic_rank, residential_status, slp_instructor_first_name, slp_instructor_last_name)
+    ->  select DISTINCT first_name, last_name, email, academic_rank, residential_status, slp_instructor_first_name, slp_instructor_last_name from visit1nf;
+ERROR 1062 (23000): Duplicate entry 'ddavis@dewv.net' for key 'student.PRIMARY'
+mysql> insert into student (first_name, last_name, email, academic_rank, residential_status, slp_instructor_first_name, slp_instructor_last_name)  select DISTINCT first_name, last_name, email, academic_rank, residential_status, slp_instructor_first_name, slp_instructor_last_name from visit1nf where email != 'ddavis@dewv.edu';
+ERROR 1062 (23000): Duplicate entry 'ddavis@dewv.net' for key 'student.PRIMARY'
+mysql> insert into student (first_name, last_name, email, academic_rank, residential_status, slp_instructor_first_name, slp_instructor_last_name)  select DISTINCT first_name, last_name, email, academic_rank, residential_status, slp_instructor_first_name, slp_instructor_last_name from visit1nf where email != 'ddavis@dewv.net';
+Query OK, 9 rows affected (0.04 sec)
+Records: 9  Duplicates: 0  Warnings: 0
+
+mysql> select * from visit2nf;
+Empty set (0.00 sec)
+
+mysql> select * from student;
++------------+-----------+---------------------+---------------+--------------------+---------------------------+--------------------------+
+| first_name | last_name | email               | academic_rank | residential_status | slp_instructor_first_name | slp_instructor_last_name |
++------------+-----------+---------------------+---------------+--------------------+---------------------------+--------------------------+
+| Alice      | Albert    | aalbert@dewv.net    | Senior        | On campus          | Sam                       | Studybuddy               |
+| Bob        | Booth     | bbooth@dewv.net     | Junior        | On campus          | NULL                      | NULL                     |
+| Charlie    | Cadillac  | cadillac@dewv.net   | Senior        | Off campus         | Tery                      | Tutor                    |
+| Charlie    | Cadillac  | ccadillac@dewv.net  | Senior        | Off campus         | Tery                      | Tutor                    |
+| Eric       | Elkins    | eelkins@dewv.net    | Senior        | Off campus         | NULL                      | NULL                     |
+| Frank      | Forest    | fforest@dewv.net    | Sophomore     | On campus          | NULL                      | NULL                     |
+| Gary       | Gatehouse | ggatehouse@dewv.net | Junior        | On campus          | Terry                     | Tutor                    |
+| Hannah     | Hermanson | hhermanson@dewv.net | Senior        | On campus          | NULL                      | NULL                     |
+| Irving     | Icehouse  | iicehouse@dewv.net  | Junior        | On campus          | Sam                       | Studybuddy               |
++------------+-----------+---------------------+---------------+--------------------+---------------------------+--------------------------+
+9 rows in set (0.00 sec)
+
+mysql> quit

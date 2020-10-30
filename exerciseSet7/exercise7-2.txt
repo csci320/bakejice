@@ -1,0 +1,1 @@
+Email is not the only satisfactory key, first name and last name could also be used as they hold values unique to that student.

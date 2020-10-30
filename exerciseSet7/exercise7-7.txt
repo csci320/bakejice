@@ -1,0 +1,6 @@
+mysql> alter table student_sport
+    -> add constraint foreign key(sport_name, gender) references sport(name, gender);
+Query OK, 6 rows affected (0.99 sec)
+Records: 6  Duplicates: 0  Warnings: 0
+
+mysql> notee

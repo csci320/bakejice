@@ -1,0 +1,1 @@
+Both tables satfisy 3NF as they no longer contain transitive dependencies.

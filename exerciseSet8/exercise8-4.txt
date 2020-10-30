@@ -1,0 +1,3 @@
+visit2nf and student satisfy 3NF because neither of them have transitive dependencies. major also satisfies because it only has one column, therefore it cannot have transitive dependencies.
+sport and student_sport do not satisfy 3NF.
+student_major does because of the relationship between student and their major.

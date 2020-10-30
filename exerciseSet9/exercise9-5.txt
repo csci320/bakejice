@@ -1,0 +1,13 @@
+mysql> select first_name, last_name, name, season from student join student_sport on student.email = student_sport.email join sport on student_sport.sport_name = sport.name;
++------------+-----------+----------+--------+
+| first_name | last_name | name     | season |
++------------+-----------+----------+--------+
+| Charlie    | Cadillac  | Baseball | Spring |
+| Eric       | Elkins    | Baseball | Spring |
+| Bob        | Booth     | Golf     | Fall   |
+| Charlie    | Cadillac  | Soccer   | Fall   |
+| Charlie    | Cadillac  | Soccer   | Fall   |
++------------+-----------+----------+--------+
+5 rows in set (0.01 sec)
+
+mysql> notee

@@ -1,0 +1,21 @@
+mysql> select student.first_name, student.last_name, student_sport.sport_name
+    -> from student
+    -> left outer join student_sport
+    -> on student.email = student_sport.email;
++------------+-----------+------------+
+| first_name | last_name | sport_name |
++------------+-----------+------------+
+| Alice      | Albert    | NULL       |
+| Bob        | Booth     | Golf       |
+| Charlie    | Cadillac  | NULL       |
+| Charlie    | Cadillac  | Baseball   |
+| Charlie    | Cadillac  | Soccer     |
+| Eric       | Elkins    | Baseball   |
+| Frank      | Forest    | NULL       |
+| Gary       | Gatehouse | NULL       |
+| Hannah     | Hermanson | NULL       |
+| Irving     | Icehouse  | NULL       |
++------------+-----------+------------+
+10 rows in set (0.00 sec)
+
+mysql> notee

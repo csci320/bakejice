@@ -1,0 +1,53 @@
+mysql> use example;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> start transaction;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> drop table computer;
+Query OK, 0 rows affected (0.14 sec)
+
+mysql> show tables;
++-------------------+
+| Tables_in_example |
++-------------------+
+| commuter_students |
+| location          |
+| major             |
+| printer           |
+| sport             |
+| staff             |
+| student           |
+| student_major     |
+| student_sport     |
+| visit             |
+| visit1nf          |
+| visit2nf          |
++-------------------+
+12 rows in set (0.00 sec)
+
+mysql> rollback;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> show tables;
++-------------------+
+| Tables_in_example |
++-------------------+
+| commuter_students |
+| location          |
+| major             |
+| printer           |
+| sport             |
+| staff             |
+| student           |
+| student_major     |
+| student_sport     |
+| visit             |
+| visit1nf          |
+| visit2nf          |
++-------------------+
+12 rows in set (0.00 sec)
+
+mysql> notee

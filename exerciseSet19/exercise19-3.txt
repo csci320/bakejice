@@ -1,0 +1,1 @@
+Entering "; select sport_name, gender, first_name, last_name from student_sport join student on student_sport.email = student.email;" would show sport and student data in the output.

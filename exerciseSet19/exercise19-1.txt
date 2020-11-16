@@ -1,0 +1,1 @@
+Entering "; select first_name, last_name from student;" would show all student names in the output.

@@ -1,0 +1,1 @@
+Entering "; TRUNCATE TABLE students;" would result in deleteion of all student records.

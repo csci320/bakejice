@@ -1,0 +1,43 @@
+mysql> create database example;
+Query OK, 1 row affected (0.05 sec)
+
+mysql> exit
+Bye
+gitpod /workspace/bakejice $ mysql example < backup.sql
+gitpod /workspace/bakejice $ mysql
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 15
+Server version: 8.0.21-0ubuntu0.20.04.4 (Ubuntu)
+
+Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> use example
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> show tables;
++-------------------+
+| Tables_in_example |
++-------------------+
+| commuter_students |
+| computer          |
+| location          |
+| major             |
+| printer           |
+| sport             |
+| staff             |
+| student           |
+| student_major     |
+| student_sport     |
+| visit             |
+| visit1nf          |
+| visit2nf          |
++-------------------+
+13 rows in set (0.01 sec)

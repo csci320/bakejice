@@ -1,0 +1,17 @@
+mysql> slect major_name, count(*) from student_major group by major_name;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'slect major_name, count(*) from student_major group by major_name' at line 1
+mysql> select major_name, count(*) from student_major group by major_name;
++------------------+----------+
+| major_name       | count(*) |
++------------------+----------+
+| Computer Science |        3 |
+| Philosophy       |        2 |
+| English          |        2 |
+| Biology          |        1 |
+| Undecided        |        1 |
+| Math             |        1 |
+| Chemistry        |        2 |
++------------------+----------+
+7 rows in set (0.01 sec)
+
+mysql> notee

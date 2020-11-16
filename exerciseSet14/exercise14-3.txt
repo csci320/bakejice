@@ -1,0 +1,12 @@
+mysql> select email from student where slp_instructor_first_name is not NULL and email not in (select email from student_sport);
++---------------------+
+| email               |
++---------------------+
+| aalbert@dewv.net    |
+| cadillac@dewv.net   |
+| ggatehouse@dewv.net |
+| iicehouse@dewv.net  |
++---------------------+
+4 rows in set (0.00 sec)
+
+mysql> notee

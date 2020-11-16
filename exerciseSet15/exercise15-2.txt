@@ -1,0 +1,9 @@
+mysql> create user 'commuter'@'localhost' indentified by 'more parking';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'indentified by 'more parking'' at line 1
+mysql> create user 'commuter'@'localhost' identified by 'more parking';
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> grant select on commuter_students to 'commuter'@'localhost';
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> notee

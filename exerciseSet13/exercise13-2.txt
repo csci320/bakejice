@@ -1,0 +1,26 @@
+mysql> tee exercise13-2.txt
+mysql> select email, major_name, (select count(email) from student
+    -> 
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+mysql> notee
+mysql> select email, major_name, (select count(email) from student_major b where student_major.major_name = b.major_name) from student_major;
++---------------------+------------------+------------------------------------------------------------------------------------------+
+| email               | major_name       | (select count(email) from student_major b where student_major.major_name = b.major_name) |
++---------------------+------------------+------------------------------------------------------------------------------------------+
+| aalbert@dewv.net    | Computer Science |                                                                                        3 |
+| bbooth@dewv.net     | Computer Science |                                                                                        3 |
+| bbooth@dewv.net     | Philosophy       |                                                                                        2 |
+| ccadillac@dewv.net  | English          |                                                                                        2 |
+| ddavis@dewv.net     | English          |                                                                                        2 |
+| ddavis@dewv.net     | Philosophy       |                                                                                        2 |
+| eelkins@dewv.net    | Biology          |                                                                                        1 |
+| fforest@dewv.net    | Undecided        |                                                                                        1 |
+| ggatehouse@dewv.net | Computer Science |                                                                                        3 |
+| ggatehouse@dewv.net | Math             |                                                                                        1 |
+| hhermanson@dewv.net | Chemistry        |                                                                                        2 |
+| iicehouse@dewv.net  | Chemistry        |                                                                                        2 |
++---------------------+------------------+------------------------------------------------------------------------------------------+
+12 rows in set (0.01 sec)
+
+mysql> notee

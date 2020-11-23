@@ -1,0 +1,3 @@
+> db.temp_students.deleteOne( { email: 'bbooth@dewv.net'} 
+)
+{ "acknowledged" : true, "deletedCount" : 1 }

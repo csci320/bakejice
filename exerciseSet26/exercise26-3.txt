@@ -1,0 +1,1 @@
+MySQL uses primary keys, while Mongo uses unique keys. Altougth, both serve the the same function which is identifing a record. They both enforce data integrity.

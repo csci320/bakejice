@@ -1,0 +1,3 @@
+> db.temp_students.deleteMany( { email: {$ne: 'bbooth@dewv
+.net'}})
+{ "acknowledged" : true, "deletedCount" : 8 }

@@ -1,0 +1,1 @@
+MySQL seems to enforce Referential Integrity much more than Mongo. SQL tables references are much more influential over the data and require more maintianing. Mongo is more friendly in terms of syntax but I found it more difficult to keep track of data.
